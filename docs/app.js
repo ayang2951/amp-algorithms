@@ -3,7 +3,6 @@
 marked.setOptions({ gfm:true, mangle:false, headerIds:false });
 
 const ORDERED_NOTES = [
-  { file: "vamp_algorithms.md", title: "VAMP Algorithm Implementations" },
   { file: "vamp_state_evolutions.md", title: "VAMP State Evolutions" }
 ];
 
