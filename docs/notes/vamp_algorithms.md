@@ -120,7 +120,7 @@ $$\tilde f_k(\mathbf{r}\_1^k) \triangleq \begin{cases}
 
 <ol type="1">
 <li>$\hat\beta^k \triangleq \tilde f^{lasso}_k(\mathbf{r}_1^k)$</li>
-<li>$b_k \triangleq \frac{1}{p} \sum_{j = 1}^p {{\tilde f}^{lasso}}'_k(\mathbf{r}_{1j}^k)$</li>
+<li>$b_k \triangleq \frac{1}{p} \sum_{j = 1}^p {\tilde f^{lasso}}'_k(\mathbf{r}_{1j}^k)$</li>
 <li>$\eta_{k} \triangleq \frac{\gamma_{1k}}{b_k}$</li>
 <li>$\gamma_{2k} \triangleq \eta_k - \gamma_{1k}$</li>
 <li>$\mathbf{r}_2^k \triangleq \frac{1}{\gamma_{2k}} \left(\eta_{k} \hat\beta^k - \gamma_{1k} \mathbf{r}_1^k\right)$</li>
@@ -146,7 +146,7 @@ $$\tilde f_k(\mathbf{r}\_1^k) \triangleq \frac{1}{1 + \frac{\lambda}{\gamma_{1k}
 
 <ol type="1">
 <li>$\hat\beta^k \triangleq \tilde f^{ridge}_k(\mathbf{r}_1^k)$</li>
-<li>$b_k \triangleq \frac{1}{p} \sum_{j = 1}^p {{\tilde f}^{ridge}}'_k(\mathbf{r}_{1j}^k)$</li>
+<li>$b_k \triangleq \frac{1}{p} \sum_{j = 1}^p {\tilde f^{ridge}}'_k(\mathbf{r}_{1j}^k)$</li>
 <li>$\eta_{k} \triangleq \frac{\gamma_{1k}}{b_k}$</li>
 <li>$\gamma_{2k} \triangleq \eta_k - \gamma_{1k}$</li>
 <li>$\mathbf{r}_2^k \triangleq \frac{1}{\gamma_{2k}} \left(\eta_{k} \hat\beta^k - \gamma_{1k} \mathbf{r}_1^k\right)$</li>
