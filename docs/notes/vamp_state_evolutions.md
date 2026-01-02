@@ -13,7 +13,7 @@ We now give the Bayes VAMP state evolution recursion. Let $s \in \mathbb R^p$ be
 <div class="callout algorithm"><span class="label">Algorithm: Bayes VAMP SE Recursion</span><br/>
 <hr style="height:0.01px; visibility:hidden;" />
 For Bayes VAMP, the state evolution recursion is defined by the following updates, in terms of the prior $\pi_\beta$ and the function 
-$$f_k(P_k) \triangleq \mathbb E\left[\bar\beta \ | \ \bar\beta + \mathcal N(0, \frac{1}{{\bar\gamma}_{1k}}) = (P_k + \beta)\right] - \beta,$$
+$$f_k(P_k) \triangleq \mathbb E\left[\bar\beta \ | \ \bar\beta + \mathcal N(0, \frac{1}{\bar\gamma_{1k}}) = (P_k + \beta)\right] - \beta,$$
 where $\beta \sim \pi_\beta$.
 
 <ol type="1">
@@ -40,7 +40,7 @@ for the $\kappa_{1k}^2$ update.
 First, we define a few quantities and functions required for the state evolution. Let us define $\xi \triangleq U^\top \epsilon$ and $s \in \mathbb R^p$ to be the diagonal of the top $p$ singular values of $X$. Define $w \triangleq [\zeta, s]^\top \in \mathbb R^{2 \times p}$.
 
 For fixing $S$ as the limiting empirical distribution in Wasserstein 2 of the vector $s$ and $\Xi$ as the limiting distribution of the components of $\xi$, we can define the following functions (note that the capital letters denote randomness; the actual updates using $f$ and $g$ will require taking an expectation over the functions):
-$$f_k(P_k) \triangleq \mathbb E\left[\bar\beta \ | \ \bar\beta + \mathcal N(0, \frac{1}{{\bar\gamma}\_{1k}}) = (P_k + \beta)\right] - \beta,$$
+$$f_k(P_k) \triangleq \mathbb E\left[\bar\beta \ | \ \bar\beta + \mathcal N(0, \frac{1}{\bar\gamma\_{1k}}) = (P_k + \beta)\right] - \beta,$$
 where $\beta \sim \pi_\beta$ and the component-wise function over $[\zeta, s]$ to be
 $$g(Q_k) = \frac{S \cdot \Xi + \sigma^2{\bar\gamma}\_{2k} Q_k}{S^2 + \sigma^2 {\bar\gamma}_{2k}},$$
 and the auxiliary functions
